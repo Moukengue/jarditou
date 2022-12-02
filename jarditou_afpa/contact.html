@@ -10,47 +10,46 @@
 </head>
 <body>
     <header id="header" >
-        <img  id="logo"src="assets/img/jarditou_photos/jarditou_logo2.png"  alt="Logo" title="logotb">
+        <img  id="logo" src="assets/img/jarditou_photos/jarditou_logo2.png"  alt="Logo" title="logotb">
         
-        <h3>La qualité depuis 70 ans</h3>
+        <h1>La qualité depuis 70 ans</h1>
     </header>
-
     <nav>
         <ul class="liens">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="tableau.html">Tableau</a></li>
-            <li><a href="contact.html">Contact</a> </li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-        <img id="promotion"src="assets/img/jarditou_photos/promotion.jpg" alt="Promotion" title="Promotion"><br>
+        <img id="promotion" src="assets/img/jarditou_photos/promotion.jpg" alt="Promotion" title="Promotion"><br>
     </nav>
     <section>
-            <h1>Contact</h1>
+            <h2>Contact</h2>
             <hr>
         <p>* Ces zones sont obligatoires</p>
-        <form>
-            <fieldset >
+        <form action="destination.php" method="post">
+            <fieldset>
                 <legend>Vos coordonnées</legend>
-                <label for="nom">Votre nom* :</label>
-                <input type="text" name="nom" id="">
-                <label for="Votre Prénom">Votre Prénom* :</label>
-                <input type="text" name="Prénom" id="">
-                <label for="sexe">Sexe*:</label>
+                <label for="nom"> Votre nom*:</label>
+                <input type="text" name="nom" id="nom">
+                <label for="prenom"> Votre Prenom* : </label>
+                <input type="texet" name="prenom" id="prenom">
+                <p>Sexe*: </p>
                 <div id="sexe">
-                    <label for="féminin">Féminin</label>
-                    <input type="radio" name="sexe" value="féminin" checked required>
-                    <label for="masculin">Masculin</label>
-                    <input type="radio" name="sexe" value="masculin" required>
+                    <label for="feminin">Feminin</label>
+                    <input type="radio" name="sexe" id="feminin" checked required>
+                    <label for="masculin"> Masculin </label>
+                    <input type="radio" name="sexe" id="masculin" required>
                 </div>
-                <label for="ddn">Date de naissance* :</label>
-                <input type="date" name="ddn" id="date"><br>
-                <label for="code postal">Code Postal* :</label>
-                <input type="text" name="Code postal"><br>
+                <label for="ddn"> Date de naissance* :</label>
+                <input type="date" name="ddn" id="ddn">
+                <label for="cpostal"> Code Postal*:</label>
+                <input type="text" name="Code postal" id="cpostal"><br>
                 <label for="adresse">Adresse :</label>
-                <input type="text" name="adresse" id=""><br>
-                <label for="ville">ville :</label>
-                <input type="text" name="ville" id=""><br>
+                <input type="text" name="adresse" id="adresse"><br>
+                <label for="ville"> ville :</label>
+                <input type="text" name="ville" id="ville"><br>
                 <label for="email">Email* :</label>
-                <input type="email" placeholder="Entrez votre adresse mail" name="email"><br>
+                <input type="email" name="email" id="email"     placeholder="Entrez votre adresse mail"><br>
             </fieldset>
             <fieldset>
                 <legend>Votre demande</legend>
@@ -63,13 +62,13 @@
                         <option value="Autres">Autres</option>
                     </select>
                     <br><br>
-                    <label for="">Vos question* :</label>
-                    <textarea name="Commentaire" id="" cols="20" rows="2" placeholder=""></textarea>
+                    <label for="Commentaire">Vos question* :</label>
+                    <textarea name="Commentaire" id="Commentaire" cols="20" rows="2" placeholder="Ecrivez quelque chose.."></textarea>
                 </div>
             </fieldset>
             <div>
-                <input type="checkbox" name="" id="message">
-                <label for="">*J'accepte le traitement informatique de ce formulaire</label>
+                <input type="checkbox" name="message" id="message">
+                <label>*J'accepte le traitement informatique de ce formulaire</label>
                 <br><br>
                 <input type="submit" value="Envoyer">
                 <input type="reset" value="Annuler">
