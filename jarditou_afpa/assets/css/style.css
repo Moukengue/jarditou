@@ -8,7 +8,7 @@ header {
   width: 40%;
 }
 
-#promotion{
+#promotion {
   width: 100%;
 }
 
@@ -50,15 +50,14 @@ hr {
 }
 
 #aside {
-  display: flex;
   float: right;
   background-color: grey;
   width: 550px;
-  height: 560px;
+  height: 520px;
 }
 
 #article {
-  max-width: 70%;
+  max-width: 50%;
 
 }
 
@@ -136,87 +135,95 @@ input[type=reset] {
 
 input[type=submit] {
   background-color: rgb(40, 116, 5);
-  /* fin html contact */
 }
+  /* fin html contact */
+
   /* Tableau */
+#tableau {
+  width: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-  #tableau {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
+#tableau td,
+#tableau th {
+  border: 1px solid rgb(210, 22, 22);
+  padding: 8px;
+}
 
-  #tableau td,
-  #tableau th {
-    border: 1px solid rgb(210, 22, 22);
-    padding: 8px;
-  }
+#tableau tr:nth-child(even) {
 
-  #tableau tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
+  background-color: #f2f2f2;
 
-  #tableau tr:hover {
-    background-color: #ddd;
-  }
+}
 
-  #tableau th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #04AA6D;
-    color: white;
-  }
+#tableau tr:hover {
+  background-color: #ddd;
+}
 
-  /*encadrement des phf@media screen and (max-width:768px)otos avec tbody */
-  #photo {
-    background-color: aqua;
-  }
+#tableau th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
 
-  /* fin html tableau
+/*encadrement des phf@media screen and (max-width:768px)otos avec tbody */
+#photo {
+  background-color: aqua;
+
+}
+
+/* fin html tableau
   /* début de web responsive*/
 
-  @media screen and (max-width: 768px) {
-    h3 {
-      margin: 0;
-      padding: 0;
-      font-size: 0.5em;
-    }
-    header{ 
-      display: flex;
-      justify-content: space-between;
-      width: 70%;
-      height:1em;
-      
-    }
+@media screen and (max-width: 768px) {
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
 
-    #logo{
-      width: 5em;
-    }
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 1em;
 
-    #promotion{
-      width: 100%;
-      
-    }
+  }
 
-    article{ 
-      font-family: Arial, Helvetica, sans-serif;
-      text-align-last:left;
-        }
-        #aside {
-          display:none;
-          float: right;
-          background-color: grey;
-          
-        }
-        .liens {
-    
-          flex-direction: column;
-          height: auto;
-        }
-        #article {
-          max-width: 100%;
-        
-        }
-    }
-  
+  #logo {
+    width: 5em;
+  }
+
+  #promotion {
+    width: 100%;
+
+  }
+
+  article {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align-last: left;
+
+  }
+
+  article {
+    font-size: 20px;
+  }
+
+  #aside {
+    display: none;
+    float: right;
+    background-color: grey;
+
+  }
+
+  .liens {
+
+    flex-direction: column;
+    height: auto;
+  }
+
+}
